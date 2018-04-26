@@ -26,6 +26,21 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.aog</groupId>
+			<artifactId>aog-common</artifactId>
+			<version>${aog-common.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javaee</groupId>
+					<artifactId>javaee-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mybatis</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
